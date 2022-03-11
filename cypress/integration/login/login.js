@@ -1,4 +1,3 @@
-import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps"
 import  Login  from "../../pageObjects/loginPage"
 
 const loginPage = new Login();

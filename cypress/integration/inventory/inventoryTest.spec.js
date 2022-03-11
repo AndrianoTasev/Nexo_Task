@@ -1,4 +1,3 @@
-import {Given, And} from "cypress-cucumber-preprocessor/steps"
 import Invetory from "../../pageObjects/inventoryPage"
 import Login  from "../../pageObjects/loginPage"
 

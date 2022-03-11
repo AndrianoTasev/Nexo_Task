@@ -1,4 +1,3 @@
-import { Given } from "cypress-cucumber-preprocessor/steps/index"
 
 Given('I navigate to login page', ()=> {
     loginPage.navigate();

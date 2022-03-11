@@ -2,18 +2,6 @@ import  Login  from "../../pageObjects/loginPage"
 
 const loginPage = new Login();
 
-Given('I navigate to login page', ()=> {
-    loginPage.navigate();
-})
-
-When('I enter username {string}', (username)=> {
-    loginPage.enterUsername(username);
-})
-
-And('I enter password {string}', (password)=> {
-    loginPage.enterPassword(password);
-})
-
 And('I click Login button', ()=> {
     loginPage.clickLoginButton();
  })

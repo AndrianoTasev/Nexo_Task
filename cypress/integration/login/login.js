@@ -7,12 +7,6 @@ Given('I navigate to login page', ()=> {
     loginPage.navigate();
 })
 
-//When('I enter username {string}" ', (dataTable)=> {
-//    dataTable.hashes().forEach(row => {
-//        loginPage.enterUsername(row.username);
-//    });
-//})
-
 When('I enter username {string}', (username)=> {
     loginPage.enterUsername(username);
 })
@@ -21,33 +15,15 @@ And('I enter password {string}', (password)=> {
     loginPage.enterPassword(password);
 })
 
-//Then('I enter {string}', (table)=> {
-//    table.hashes().forEach(row => {
-//        loginPage.enterPassword(row.password);
-//    });
-// })
-
 And('I click Login button', ()=> {
     loginPage.clickLoginButton();
  })
 
-Then('I should be able to login', ()=> {
-    cy.title().should('eq', 'Swag Labs');
+When('I enter {string} and {string}', (username, password)=> {
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
 })
 
-Given('I login as standard user', (table)=> {
-    table.hashes().forEach(row => {
-        loginPage.enterUsername(row.username);
-        loginPage.enterPassword(row.password);
-    });
+Then('I should be able to login {string}', (expectation)=> {
+        loginPage.checkUserIsLoged(expectation)
 })
-
-When('I enter {string} and {string}', (table)=> {
-    table.hashes().forEach(row => {
-        loginPage.enterUsername(row.username);
-        loginPage.enterPassword(row.password);
-    });
-})
-
-
- 

@@ -1,31 +1,16 @@
-Feature: Login Page
+Feature: Login Feature
 
     
     Background:
     Given I navigate to login page
-    Scenario: Login with different users
-    When I enter username "standard_user"
-    And I enter password "secret_sauce"
-    And I click Login button
-    Then I should be able to login
-
-    Scenario: Login with standard user
-    Given I login as standard user
-    | username     | password     |
-    | standard_user| secret_sauce |
-     And I click Login button
-    Then I should be able to login
-
-
     Scenario Outline: Login with multiple users
-    When I enter "<username>" and "<password>"
-    Then I click Login button
+    When I enter '<username>' and '<password>'
+    And I click Login button
+    Then I should be able to login "<expectation>"
     Examples:
-        | username | password |
-        | standard_user  | secret_sauce  |
-        | locked_out_user | secret_sauce  |
- #  Examples:
- #      | username        | password      |
- #      | standard_user   | secret_sauce  |
- #      | locked_out_user | secret_sauce  |
+        | username                | password      |         expectation                     |
+        | standard_user           | secret_sauce  |     User should be able to login        |
+        | locked_out_user         | secret_sauce  |     User should not be able to login    |
+        | problem_user            | secret_sauce  |     User should be able to login        |
+        | performance_glitch_user | secret_sauce  |     User should be able to login        |
 

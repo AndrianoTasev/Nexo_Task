@@ -19,5 +19,9 @@ class Login {
         cy.get('#login-button').click()
         return this
     }
+
+    checkUserIsLoged(expectation) {
+        cy.log(expectation)
+    }
 }
 export default Login

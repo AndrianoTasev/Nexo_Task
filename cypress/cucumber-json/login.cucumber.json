@@ -1,0 +1,212 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "line": 1,
+    "id": "login-feature",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "login-feature;login-with-multiple-users",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login with multiple users",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to login page",
+            "result": {
+              "status": "passed",
+              "duration": 340000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter 'standard_user' and 'secret_sauce'",
+            "result": {
+              "status": "passed",
+              "duration": 754000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click Login button",
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be able to login \"User should be able to login\"",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;login-with-multiple-users",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Login with multiple users",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to login page",
+            "result": {
+              "status": "passed",
+              "duration": 404000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter 'locked_out_user' and 'secret_sauce'",
+            "result": {
+              "status": "passed",
+              "duration": 742000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click Login button",
+            "result": {
+              "status": "passed",
+              "duration": 145000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be able to login \"User should not be able to login\"",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;login-with-multiple-users",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login with multiple users",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to login page",
+            "result": {
+              "status": "passed",
+              "duration": 212000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter 'problem_user' and 'secret_sauce'",
+            "result": {
+              "status": "passed",
+              "duration": 737000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click Login button",
+            "result": {
+              "status": "passed",
+              "duration": 155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be able to login \"User should be able to login\"",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-feature;login-with-multiple-users",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login with multiple users",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to login page",
+            "result": {
+              "status": "passed",
+              "duration": 348000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter 'performance_glitch_user' and 'secret_sauce'",
+            "result": {
+              "status": "passed",
+              "duration": 805000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click Login button",
+            "result": {
+              "status": "passed",
+              "duration": 5226000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should be able to login \"User should be able to login\"",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

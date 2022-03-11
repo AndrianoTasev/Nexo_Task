@@ -1,4 +1,4 @@
-Feature: Inventory Page
+Feature: Add Products From Inventory Page
 
 Background: 
 Given I navigate to login page

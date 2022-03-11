@@ -1,13 +1,5 @@
 class Inventory {
 
-    invetoryUrl = 'https://www.saucedemo.com/inventory.html';
-
-    
-    getUrl() {
-        cy.url().should('eq', invetoryUrl)
-        return this
-    }
-
     findProduct(productName) {
        cy.contains(productName).click();
     }
@@ -23,6 +15,5 @@ class Inventory {
     navigateToProductsPage() {
        cy.get('#back-to-products').click()
     }
-
 }
 export default Inventory

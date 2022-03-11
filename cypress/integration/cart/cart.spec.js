@@ -1,4 +1,3 @@
-import { Then } from "cypress-cucumber-preprocessor/steps/index"
 import Cart from "../../pageObjects/cartPage"
 
 const cart = new Cart()
